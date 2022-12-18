@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -9,256 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
-    <title>Nguyen Duy Thinh</title>
+    <title>Hai Chiec Tui</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-    *{
-        padding:0;
-        margin: 0;
-    }
-    body{
-        margin: 0px;
-        padding: 0px;
-        height: 100vh;
-        width: 100%;
-        font-family: "Poppins";
-        background: white;
-        overflow-x: hidden;
-    }
-    @media
-    only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (-o-min-device-pixel-ratio: 3/2),
-    only screen and (min--moz-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5){
-        html,
-        body{
-            width:100%;
-            overflow-x:hidden;
-        }
-    }
-    .feature{
-        position: relative;
-        height: 400px;
-        margin: 0;
-        padding: 10%;
-        width: 80%;
-        background-image: url("5.jpg");
-        border-radius: 1rem;
-        box-shadow: 0 5px 15px black;
-        overflow: hidden;
-    }
-    .feature .group1{
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .feature .group1 .group2{
-        position: relative;
-        width: 100%;
-        height: 70%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .feature .group1 .group3{
-        position: relative;
-        width: 50%;
-        height: 102%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .feature .group1 .box1{
-        position: relative;
-        border: 3px solid black;
-        height: 26%;
-        width: 100%;
-        background-image: url("3.jpg");
-        background-repeat: no-repeat;
-        background-size: 9rem;
-        background-position: center;
-        background-position-y: -1rem;
-        background-color: white;
-        transition: all 1s;
-    }
-    .feature .group1 .box1::before{
-        display: flex;
-        align-items: center;
-        content: 'Hi, my name is Nguyen Duy Thinh and as the picture shown, I love the street lifestyle, this doesnot means I live on street :>';
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 1500;
-        opacity: 0;
-        transition: all 1s;
-    }
-    .feature .group1 .box1:hover{
-        transform: scale(1.2);
-        z-index: 1000;
-        box-shadow: 0 5px 15px black;
-    }
-    .feature .group1 .box1:hover::before{
-        opacity: 1;
-    }
-    .feature .group1 .box2{
-        position: relative;
-        border: 3px solid black;
-        height: 100%;
-        width: 45%;
-        background-image: url("5.png");
-        background-repeat: none;
-        background-size: 12rem;
-        background-position: center;
-        background-position-y: -2rem;
-        background-position-x: 0rem;
-        transition: all 1s;
-    }
-    .feature .group1 .box2::before{
-        display: flex;
-        align-items: center;
-        content: 'I love photography, but I was not "handsome" enough to be a model haha, but I still love editing artistically. And I had some passionating projects :>';
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 1500;
-        opacity: 0;
-        transition: all 1s;
-    }
-    .feature .group1 .box2:hover::before{
-        opacity: 1;
-    }
-    .feature .group1 .box2:hover{
-        transform: scale(1.2);
-        z-index: 1000;
-        box-shadow: 0 5px 15px black;
-    }
-    .feature .group1 .box3{
-        position: relative;
-        width: 100%;
-        height: 30%;
-        border: 3px solid black;
-        background-image: url("2.jpg");
-        background-repeat: none;
-        background-size: cover;
-        background-position: center;
-        background-position-y: -2rem;
-        transition: all 1s;
-    }
-    .feature .group1 .box3::before{
-        display: flex;
-        align-items: center;
-        content: 'Friends with me like a family :>';
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 1500;
-        opacity: 0;
-        transition: all 1s;
-    }
-    .feature .group1 .box3:hover::before{
-        opacity: 1;
-    }
-    .feature .group1 .box3:hover{
-        transform: scale(1.2);
-        z-index: 1000;
-        box-shadow: 0 5px 15px black;
-    }
-    .feature .group1 .box4{
-        position: relative;
-        width: 100%;
-        height: 62.5%;
-        border: 3px solid black;
-        background-image: url("1.jpg");
-        background-repeat: none;
-        background-size: cover;
-        background-position: center;
-        transition: all 1s;
-    }
-    .feature .group1 .box4::before{
-        display: flex;
-        align-items: center;
-        content: 'This is not about the Voice, it is about acting weird. Yes, it is me, I always act not like a human but never feel shame';
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 1500;
-        opacity: 0;
-        transition: all 1s;
-    }
-    .feature .group1 .box4:hover::before{
-        opacity: 1;
-    }
-    .feature .group1 .box4:hover{
-        transform: scale(1.2);
-        z-index: 1000;
-        box-shadow: 0 5px 15px black;
-    }
-    .content{
-        position: relative;
-        width: 100%;
-        padding: 10%;
-        display: flex;
-        flex-direction: column;
-    }
-    #play{
-        position: absolute;
-        left: 0;
-        font-size: 5rem;
-        background-color: white;
-        border-radius: 50%;
-        /* transform: rotate(360deg);
-        transition: all 2s; */
-    }
-    .element{
-        display: flex;
-        align-items: center;
-        width: 80%;
-        border-radius: 5rem;
-        height: 4rem;
-        box-shadow: 0 5px 15px black;
-        margin-bottom: 1.5rem;
-        overflow: hidden;
-        background-image: url("5.jpg");
-        background-position: top;
-    }
-    .text{
-        position: relative;
-        left: 0;
-        width: 100%;
-        text-align: center ;
-        font-weight: 700;
-        transition: all 2s;
-        color: white;
-        text-decoration: solid 1px black;
-    }
-    .footer{
-        height: 3rem;
-        background: url("5.jpg");
-        background-position: 0rem 10.5rem;
-        border-radius: 20px 20px 0 0;
-        text-align: center;
-        color: white;
-        font-weight: 700;
-        font-size: 1rem;
-        text-decoration: solid 3px black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 5px 15px black;
-    }
-</style>
 <body>
     <div class="feature">
         <div class="group1">
@@ -274,24 +27,24 @@
     </div>
     <div class="content">
         <div class="element">
-            <span id="play" class="material-icons-outlined">play_circle_filled</span>
+            <img id="icon" src="source/icon.png">
             <div class="text">FaceBook</div>
         </div>
         <div class="element">
-            <span id="play" class="material-icons-outlined">play_circle_filled</span>
+            <img id="icon" src="source/icon.png">
             <div class="text">Instagram</div>
         </div>
         <div class="element">
-            <span id="play" class="material-icons-outlined">play_circle_filled</span>
-            <div class="text">Contact</div>
+            <img id="icon" src="source/icon.png">
+            <div class="text">Shopee</div>
         </div>
         <div class="element">
-            <span id="play" class="material-icons-outlined">play_circle_filled</span>
-            <div class="text">Github</div>
+            <img id="icon" src="source/icon.png">
+            <div class="text">FeedBack</div>
         </div>
     </div>
     <div class="footer">
-        @NguyenDuyThinh
+        @HaiChiecTiemVui
     </div>
 </body>
 <script>
@@ -305,5 +58,23 @@
     for (let i=0; i<link.length; i++){
         play[i].onclick=()=>{window.open(link[i],"_blank");}
     }
+    var bg = document.querySelector('.feature');
+    var box1 = document.querySelector('.box1');
+    var box2 = document.querySelector('.box2');
+    var box3 = document.querySelector('.box3');
+    var box4 = document.querySelector('.box4');
+    bg.style.backgroundImage = "url('source/background.jpg')";
+    box1.style.backgroundImage = "url('source/box1.jpg')";
+    box2.style.backgroundImage = "url('source/box2.jpg')";
+    box3.style.backgroundImage = "url('source/box3.jpg')";
+    box4.style.backgroundImage = "url('source/box4.jpg')";
+
+    var tags = document.querySelectorAll('.element');
+    tags.forEach(tag => {
+        tag.style.backgroundImage = "url('source/tags.jpg')";
+    });
+
+    var footer = document.querySelector('.footer');
+    footer.style.backgroundImage = "url('source/footer.jpg')";
 </script>
 </html>
