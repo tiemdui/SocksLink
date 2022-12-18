@@ -69,27 +69,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     background-color: white;
     transition: all 1s;
 }
-.feature .group1 .box1::before{
-    display: flex;
-    align-items: center;
-    content: 'Hi, my name is Nguyen Duy Thinh and as the picture shown, I love the street lifestyle, this doesnot means I live on street :>';
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 1500;
-    opacity: 0;
-    transition: all 1s;
-}
-.feature .group1 .box1:hover{
-    transform: scale(1.2);
-    z-index: 1000;
-    box-shadow: 0 5px 15px black;
-}
-.feature .group1 .box1:hover::before{
-    opacity: 1;
-}
+
 .feature .group1 .box2{
     position: relative;
     border: 3px solid black;
@@ -100,60 +80,19 @@ only screen and (min-device-pixel-ratio: 1.5){
     background-position: center;
     transition: all 1s;
 }
-.feature .group1 .box2::before{
-    display: flex;
-    align-items: center;
-    content: 'I love photography, but I was not "handsome" enough to be a model haha, but I still love editing artistically. And I had some passionating projects :>';
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 1500;
-    opacity: 0;
-    transition: all 1s;
-}
-.feature .group1 .box2:hover::before{
-    opacity: 1;
-}
-.feature .group1 .box2:hover{
-    transform: scale(1.2);
-    z-index: 1000;
-    box-shadow: 0 5px 15px black;
-}
+
 .feature .group1 .box3{
     position: relative;
     width: 100%;
     height: 30%;
     border: 3px solid black;
-    background-image: url("2.jpg");
     background-repeat: none;
     background-size: cover;
     background-position: center;
     background-position-y: -2rem;
     transition: all 1s;
 }
-.feature .group1 .box3::before{
-    display: flex;
-    align-items: center;
-    content: 'Friends with me like a family :>';
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 1500;
-    opacity: 0;
-    transition: all 1s;
-}
-.feature .group1 .box3:hover::before{
-    opacity: 1;
-}
-.feature .group1 .box3:hover{
-    transform: scale(1.2);
-    z-index: 1000;
-    box-shadow: 0 5px 15px black;
-}
+
 .feature .group1 .box4{
     position: relative;
     width: 100%;
@@ -164,27 +103,7 @@ only screen and (min-device-pixel-ratio: 1.5){
     background-position: center;
     transition: all 1s;
 }
-.feature .group1 .box4::before{
-    display: flex;
-    align-items: center;
-    content: 'This is not about the Voice, it is about acting weird. Yes, it is me, I always act not like a human but never feel shame';
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 1500;
-    opacity: 0;
-    transition: all 1s;
-}
-.feature .group1 .box4:hover::before{
-    opacity: 1;
-}
-.feature .group1 .box4:hover{
-    transform: scale(1.2);
-    z-index: 1000;
-    box-shadow: 0 5px 15px black;
-}
+
 .content{
     position: relative;
     width: 100%;
@@ -218,12 +137,10 @@ only screen and (min-device-pixel-ratio: 1.5){
     text-align: center ;
     font-weight: 700;
     transition: all 2s;
-    color: white;
     text-decoration: solid 1px black;
 }
 .footer{
     height: 3rem;
-    background: url("5.jpg");
     background-position: 0rem 10.5rem;
     border-radius: 20px 20px 0 0;
     text-align: center;
